@@ -1,3 +1,6 @@
+---
+permalink: /index.html
+---
 # Courage in CSS
 #### *What is it?*
 ### It's a Courage.
