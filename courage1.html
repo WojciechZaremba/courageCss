@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="courage1styles.css">
+</head>
+<body>
+    <div class="scene">
+        <div class="bodyParts" style="display: block; opacity: .9">
+            <div class="tail"></div>
+            <div class="tail1"></div>
+            <div class="tail2"></div>
+            <div class="tail3"></div>
+            <div class="ears">
+                <div class="rightEarXX"></div>
+                <div class="rightEar1XX"></div>
+                <div class="leftEar0"></div>
+                <div class="leftEar2"></div>
+                <div class="leftEar1"></div>
+                <div class="rightEar"></div>
+                <div class="rightEar1"></div>
+                <div class="rightEar2"></div>
+                <div class="rightEar3"></div>
+                <div class="rightEar4"></div>
+                <div class="rightEar5"></div>
+                <div class="rightEar6"></div>
+            </div>
+            <div class="back"></div>
+            <div class="corrector"></div>
+            <div class="leftHand"></div>
+            <div class="leftHand1"></div>
+            <div class="leftLeg"></div>
+            <div class="leftLeg1"></div>
+            <div class="rightLeg"></div>
+            <div class="rightLeg1"></div>
+            <div class="rightHand"></div>
+            <div class="rightHand1"></div>
+            <div class="paw">
+                <div class="palm"></div>
+            </div>
+            <div class="paw1">
+                <div class="palm1"></div>
+            </div>
+            <div class="paw2">
+                <div class="palm2"></div>
+            </div>
+            <div class="paw3">
+                <div class="palm3"></div>
+            </div>
+
+            <div class="chest"></div>
+            <div class="belly"></div>
+            <div class="backLowerLip2">
+                <div class="throat"></div>
+                <div class="backLowerLipLeft"></div>
+            </div>
+            <div class="muzzleMiddle"></div>
+            <div class="scalp"></div>
+            
+            <div class="frontBelly"></div>
+            <div class="muzzle">
+                <div class="muzzleTop"></div>
+                <div class="mouth">
+                    <div class="teeth"></div>
+                    <div class="lips">
+                        <div class="leftLip"></div>
+                        <div class="rightLip"></div>
+                        <div class="backUpperLip"></div>
+                        <div class="cheek"></div>
+                        <div class="backLowerLip"></div>
+                        <div class="smile"></div>
+                        <div class="dot"></div>
+                        <div class="whisker"></div>
+                    </div>
+                    <div class="tounge"></div>
+                </div>
+                <div class="nose">
+                    <div class="noseMiddle"></div>
+                    <div class="noseLeft"></div>
+                    <div class="noseRight"></div>
+                    <div class="noseTop"></div>
+
+                </div>
+                <div class="chin"></div>
+            </div>
+            <div class="eyes">
+                <div class="rightEye"></div>
+                <div class="leftEye"></div>
+                <div class="rightBrow"></div>
+                <div class="leftBrow"></div>
+                <div class="rightEyebag"></div>
+                <div class="leftEyebag"></div>
+            </div>
+            <div class="noseReflection"></div>
+            <div class="noseReflection1"></div>
+        </div>
+    </div>
+    <script>
+        let sceneIsOn = true
+        document.addEventListener("wheel", ()=>{
+            const r = document.querySelector(":root")
+            if (sceneIsOn) {
+                document.getElementsByClassName("bodyParts")[0].style.display = 
+                "none"
+                r.style.setProperty("--opacity", "1")
+                sceneIsOn = false
+            } else {
+                document.getElementsByClassName("bodyParts")[0].style.display = 
+                "block"
+                r.style.setProperty("--opacity", ".1")
+                sceneIsOn = true
+            }
+        })
+    </script>
+</body>
+</html>

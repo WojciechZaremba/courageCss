@@ -1,0 +1,1132 @@
+:root {
+    --opacity: .0;
+    --furrColor: pink;
+    --backgroundColor: aliceblue;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+    /* height: 100vw; */
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.scene {
+    background-color: var(--backgroundColor);
+    box-sizing: border-box;
+    /* border: black 10px solid; */
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+.scene::before {
+    /* margin: 10px; */
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    box-sizing: border-box;
+    /* border: red 10px solid; */
+    content: "";
+    opacity: var(--opacity);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://www.gimpuj.info/gallery/8243_05_04_08_11_48_18.png");
+    /* z-index: 0; */
+}
+.bodyParts {
+    /* margin: 10px; */
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+.rightEye, .leftEye {
+    background-color: white;
+    position: absolute;
+    border: black 1vh solid;
+}
+.rightEye {
+    width: 11vh;
+    height: 22vh;
+    left: 33vh;
+    top: 12vh;
+    border-radius: 50%;
+    transform: rotate(2deg);
+    clip-path: polygon(0% 0%, 35% 0%, 61% 12%, 100% 14%, 100% 100%, 0% 100%);}
+.rightEye:before, .leftEye:before {
+    content: "";
+    width: 3vh;
+    height: 6vh;
+    left: 5vh;
+    top: 6vh;
+    position: absolute;
+    border-radius: 50%;
+    background-color: black;
+}
+.rightEye:after, .leftEye:after {
+    content: "";
+    width: 1vh;
+    height: 2vh;
+    left: 6.3vh;
+    top: 7vh;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+}
+.leftEye {
+    width: 11vh;
+    height: 21vh;
+    left: 18vh;
+    top: 13vh;
+    border-radius: 50%;
+    transform: rotate(9deg);
+    clip-path: polygon(1% 27%, 45% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+}
+.rightEyebag {
+    width: 9vh;
+    height: 3vh;
+    left: 35vh;
+    top: 32.2vh;
+    position: absolute;
+    border-radius: 0% 0% 62% 80% / 0% 0% 127% 100%;
+    transform: rotate(10deg);
+    border: black 1vh solid;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+}
+.leftEyebag {
+    width: 13vh;
+    height: 8vh;
+    left: 17vh;
+    top: 27vh;
+    position: absolute;
+    border-radius: 0% 0% 66% 25% / 0% 0% 68% 45%;
+    transform: rotate(340deg);
+    border: black 1vh solid;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+}
+.leftBrow {
+    width: 18vh;
+    height: 10vh;
+    left: 13vh;
+    top: 5vh;
+    position: absolute;
+    border-radius: 0% 0% 4% 98% / 0% 0% 39% 100%;
+    transform: rotate(283deg);
+    border: black 2vh solid;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    clip-path: polygon(0% 7%, 81% 0%, 48% 100%, 00% 100%);
+}
+.rightBrow {
+    width: 9vh;
+    height: 8vh;
+    left: 37vh;
+    top: 7vh;
+    position: absolute;
+    border-radius: 0% 14% 98% 4% / 10% 17% 100% 39%;
+    transform: rotate(66deg);
+    border: black 2vh solid;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    clip-path: polygon(21% 4%, 122% 34%, 68% 100%, 100% 95%, 1% 103%);
+}
+.scalp {
+    width: 33vh;
+    height: 17vh;
+    left: 18vh;
+    top: 11vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: black 1vh solid;
+    border-radius: 48% 39% 0% 0% / 85% 86% 0% 0%;
+    border-bottom: none;
+    border-left: none;
+}
+.corrector {
+    position: absolute;
+    width: 5vh;
+    height: 18vh;
+    left: 23vh;
+    top: 54vh;
+    background-color: var(--backgroundColor);
+    border-radius: 0% 80% 76% 0% / 0% 65% 60% 0%;
+}
+.leftHand {
+    width: 21vh;
+    height: 5vh;
+    left: 12vh;
+    top: 60vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: black 0.7vh solid;
+    transform: rotate(-49deg);
+    border-radius: 58% 42% 0% 0% / 100% 100% 0% 0%;
+    clip-path: polygon(43% 0%, 86% -54%, 81% 54%, 45% 27%);
+    overflow: hidden;
+}
+.leftHand1 {
+    width: 21vh;
+    height: 5vh;
+    left: 12vh;
+    top: 62vh;
+    position: absolute;
+    border: black 0.7vh solid;
+    transform: rotate(-44deg);
+    border-radius: 58% 42% 0% 0% / 100% 100% 0% 0%;
+    clip-path: polygon(47% -45%, 83% 13%, 71% 68%, 53% 45%);
+}
+.leftLeg {
+    width: 5vh;
+    height: 10vh;
+    left: 26.7vh;
+    top: 84vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: black 0.7vh solid;
+    transform: rotate(0);
+    border-radius: 64% 38% 15% 41% / 100% 100% 21% 74%;
+    clip-path: polygon(0% 0%, 52% 0, 32% 49%, 38% 89%, 0% 87%);
+    overflow: hidden;
+    
+}
+.leftLeg1 {
+    width: 5vh;
+    height: 10vh;
+    left: 28.4vh;
+    top: 84vh;
+    position: absolute;
+    border: black 0.7vh solid;
+    transform: rotate(0);
+    border-radius: 125% 48% 26% 41% / 100% 100% 21% 74%;
+    clip-path: inset(17% 50% 12% 0);
+    overflow: hidden;
+}
+.rightLeg {
+    width: 5vh;
+    height: 14vh;
+    left: 47vh;
+    top: 83vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: black 0.7vh solid;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(-6deg);
+    border-radius: 94% 0% 0% 40% / 100% 14% 9% 80%;
+    /* clip-path: inset(3% 51% 13% 0%); */
+    clip-path: polygon(0% 0%, 76% 0, 37% 48%, 42% 89%, 0% 88%);
+    overflow: hidden;
+}
+.rightLeg1 {
+    width: 5vh;
+    height: 14vh;
+    left: 49vh;
+    top: 81vh;
+    position: absolute;
+    border: black 0.7vh solid;
+    transform: rotate(3deg);
+    border-radius: 104% 62% 21% 45% / 100% 100% 19% 70%;
+    clip-path: inset(12% 78% 8% 0);
+    overflow: hidden;
+}
+.rightHand {
+    width: 21vh;
+    height: 5vh;
+    left: 53vh;
+    top: 51vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: black 0.7vh solid;
+    transform: rotate(39deg);
+    border-radius: 49% 64% 0% 0% / 68% 111% 0% 0%;
+    border-bottom: none;
+    border-left: none;
+    clip-path: polygon(0% -0%, 60% -26%, 61% 33%, 36% 41%, 4% 100%);
+    overflow: hidden;
+}
+.rightHand1 {
+    width: 19vh;
+    height: 5vh;
+    left: 51vh;
+    top: 51vh;
+    position: absolute;
+    border: black 0.7vh solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    transform: rotate(30deg);
+    border-radius: 58% 42% 0% 0% / 100% 100% 0% 0%;
+    clip-path: polygon(0 0, 79% 0, 72% 100%, 37% 26%);
+}
+.leftHand:before {
+    content: "";
+    width: 4vh;
+    height: 4vh;
+    left: 10.6vh;
+    top: -4vh;
+    position: absolute;
+    border: black solid 2vh;
+    border-radius: 50%;
+    transform: rotate(24deg);
+    clip-path: inset(0 9% 0 44%);
+}
+.leftLeg:before {
+    content: "";
+    width: 4vh;
+    height: 4vh;
+    left: -4.4vh;
+    top: 0vh;
+    /* background: black; */
+    position: absolute;
+    border: black solid 2vh;
+    border-radius: 50%;
+    transform: scale(1.1);
+    clip-path: inset(0 0% 41% 0%);
+}
+.paw {
+    width: 2vh;
+    height: 3vh;
+    top: 64vh;
+    left: 17.9vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: solid black 0.6vh;
+    border-radius: 50%;
+    transform: rotate(24deg);
+}
+.paw:before {
+    content: "";
+    width: 2.6vh;
+    height: 2vh;
+    top: -2.5vh;
+    left: -2.3vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: solid black 0.6vh;
+    border-radius: 50%;
+}
+.paw:after {
+    content: "";
+    width: 2.9vh;
+    height: 2vh;
+    top: -2.2vh;
+    left: 0.1vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: solid black 0.6vh;
+    border-radius: 50%;
+    z-index: 9;
+}
+.palm {
+    width: 3.5vh;
+    height: 3.5vh;
+    top: -2.3vh;
+    left: -0.8vh;
+    position: absolute;
+    background: var(--furrColor);
+    /* border-radius: 50%; */
+    transform: rotate(346deg);
+    z-index: 10;
+    clip-path: polygon(10% 11%, 49% 11%, 56% 0%, 76% 0%, 63% 20%, 87% 26%, 82% 82%, 64% 85%, 64% 101%, 17% 82%, 24% 63%, 11% 57%);
+}
+.paw1 {
+    width: 2vh;
+    height: 3vh;
+    top: 54.5vh;
+    left: 66.2vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: solid black 0.6vh;
+    border-radius: 50%;
+    transform: rotate(-35deg) scalex(-1.05);
+}
+.paw1:before {
+    content: "";
+    width: 2.6vh;
+    height: 2vh;
+    top: -2.5vh;
+    left: -2.3vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: solid black 0.6vh;
+    border-radius: 50%;
+}
+.paw1:after {
+    content: "";
+    width: 2.9vh;
+    height: 2vh;
+    top: -2.2vh;
+    left: 0.1vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: solid black 0.6vh;
+    border-radius: 50%;
+    z-index: 9;
+}
+.palm1 {
+    width: 6.5vh;
+    height: 5.5vh;
+    top: -3.3vh;
+    left: -1.8vh;
+    position: absolute;
+    background: var(--furrColor);
+    /* border-radius: 50%; */
+    transform: rotate(346deg);
+    z-index: 10;
+    clip-path: polygon(20% 17%, 37% 18%, 46% 2%, 61% 0%, 49% 30%, 67% 36%, 70% 54%, 51% 61%, 50% 86%, 21% 76%, 31% 55%, 14% 46%);
+}
+.paw2 {
+    width: 2vh;
+    height: 3vh;
+    top: 95vh;
+    left: 27.2vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: solid black 0.6vh;
+    border-radius: 50%;
+    transform: rotate(-372deg);
+}
+.paw2:before {
+    content: "";
+    width: 2.6vh;
+    height: 2vh;
+    top: -2.5vh;
+    left: -2.3vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: solid black 0.6vh;
+    border-radius: 50%;
+}
+.paw2:after {
+    content: "";
+    width: 2.9vh;
+    height: 2vh;
+    top: -2.2vh;
+    left: 1.1vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: solid black 0.6vh;
+    border-radius: 50%;
+    z-index: 9;
+}
+.palm2 {
+    width: 5.5vh;
+    height: 5.5vh;
+    top: -3.3vh;
+    left: -1vh;
+    position: absolute;
+    background: var(--furrColor);
+    /* border-radius: 50%; */
+    transform: rotate(346deg);
+    z-index: 10;
+    clip-path: polygon(25% 19%, 36% 27%, 43% -0%, 59% 6%, 53% 38%, 80% 39%, 69% 68%, 46% 59%, 44% 83%, 15% 69%, 24% 54%, 6% 46%);
+}
+.paw3 {
+    width: 2vh;
+    height: 3vh;
+    top: 96vh;
+    left: 48vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: solid black 0.6vh;
+    border-radius: 50%;
+    transform: rotate(-369deg);
+}
+.paw3:before {
+    content: "";
+    width: 2.6vh;
+    height: 2vh;
+    top: -2.1vh;
+    left: -2.7vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: solid black 0.6vh;
+    border-radius: 50%;
+}
+.paw3:after {
+    content: "";
+    width: 2.9vh;
+    height: 2vh;
+    top: -2.2vh;
+    left: 0.1vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: solid black 0.6vh;
+    border-radius: 50%;
+    z-index: 9;
+}
+.palm3 {
+    width: 5.5vh;
+    height: 5.5vh;
+    top: -3.3vh;
+    left: -1.8vh;
+    position: absolute;
+    background: var(--furrColor);
+    transform: rotate(346deg);
+    z-index: 10;
+    clip-path: polygon(15% 25%, 40% 35%, 50% 0%, 65% 0%, 59% 35%, 74% 37%, 71% 70%, 58% 70%, 58% 86%, 26% 75%, 35% 57%, 20% 59%);
+
+}
+.back {
+    width: 41vh;
+    height: 68vh;
+    left: 17vh;
+    top: 19vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: black 1vh solid;
+    border-radius: 6% 47% 52% 58% / 50% 58% 45% 30%;
+    /* border-left: none; */
+    transform: rotate(354deg);
+    clip-path: inset(26% 0 0 20%);
+    overflow: hidden;
+}
+.back:before {
+    content: "";
+    width: 9vh;
+    height: 4vh;
+    left: 35vh;
+    top: 41vh;
+    position: absolute;
+    border: black 1vh solid;
+    border-radius: 50%;
+    background-color: black;
+    transform: rotate(302deg);
+}
+.chest {
+    width: 8vh;
+    height: 29vh;
+    left: 18vh;
+    top: 44vh;
+    position: absolute;
+    /* background: var(--furrColor); */
+    border: black 1vh solid;
+    /* border-left: none; */
+    /* border-bottom: none; */
+    /* border-left: none; */
+    transform: rotate(352deg);
+    border-radius: 0% 100% 100% 0% / 0% 59% 49% 0%;
+    clip-path: inset(-0% 0 14% 68%);
+}
+.chest:before {
+    /* content: ""; */
+    position: absolute;
+    width: 5vh;
+    height: 18vh;
+    left: 3vh;
+    top: 8vh;
+    background-color: var(--backgroundColor);
+    border-radius: 0% 49% 90% 0% / 0% 46% 72% 0%;
+}
+.belly {
+    width: 17vh;
+    height: 19vh;
+    left: 24vh;
+    top: 67vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: black 1vh solid;
+    transform: rotate(371deg);
+    border-radius: 22% 45% 0% 78% / 58% 48% 47% 51%;
+    clip-path: inset(20% 59% -6% -2%);
+}
+.cheek {
+    width: 17.8vh;
+    height: 18vh;
+    left: 42vh;
+    top: 26vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: black 1vh solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 38% 77% 0% 0% / 100% 100% 0% 0%;
+    transform: rotate(60deg);
+    clip-path: polygon(0 0, 100% 0%, 100% 45%, 38% 38%, 0 38%);
+    /* z-index: 2; */
+}
+.backUpperLip {
+    width: 2.7vh;
+    height: 15vh;
+    left: 44vh;
+    top: 29vh;
+    position: absolute;
+    background: var(--furrColor);
+    border: black 1vh solid;
+    transform: rotate(43deg);
+    border-radius: 5% 100% 100% 0% / 21% 72% 46% 0%;
+    clip-path: inset(4% 0 11% 36%);
+    /* z-index: 1; */
+}
+.backLowerLip {
+    width: 10.6vh;
+    height: 28vh;
+    left: 42vh;
+    top: 29vh;
+    position: absolute;
+    border: black 1vh solid;
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(22deg);
+    border-radius: 0% 102% 85% 0% / 0% 72% 40% 0%;
+    clip-path: inset(7% 0 0% 0%);
+    /* z-index: 1; */
+    /* background-color: red; */
+    overflow: hidden;
+    /* z-index: 0; */
+
+}
+.throat {
+    /* opacity: 0.5; */
+    width: 10.6vh;
+    height: 28vh;
+    left: 42vh;
+    top: 29vh;
+    position: absolute;
+    border: black 1vh solid;
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(22deg);
+    border-radius: 0% 102% 85% 0% / 0% 72% 40% 0%;
+    clip-path: inset(7% 0 0% 0%);
+    /* z-index: 1; */
+    background-color: brown;
+    overflow: hidden;
+    /* z-index: 0; */
+    clip-path: polygon(-28% 85%, 10% 31%, 86% -14%, 95% 74%, 67% 102%);
+}
+.backLowerLip2 {
+    overflow: hidden;
+}
+/* .backLowerLipLeft {
+    position: absolute;
+    width: 10vh;
+    height: 10vh;
+    top: 0vh;
+    left: 0vh;
+    border: black 1vh solid;
+    background: var(--furrColor);
+} */
+.throat:before {
+    content: "";
+    width: 11vh;
+    height: 7vh;
+    left: -2vh;
+    top: 21vh;
+    position: absolute;
+    background-color: var(--furrColor);
+    border: black 0.7vh solid;
+    border-radius: 50% 50% 50% 50% / 50% 50% 49% 50%;
+    transform: scale(1.1)
+}
+.throat:after {
+    content: "";
+    position: absolute;
+    width: 8vh;
+    height: 14vh;
+    left: 6vh;
+    top: 14vh;
+    background-color: darkred;
+    border: khaki solid 0.8vh;
+    border-radius: 57% 42% 20% 60% / 36% 25% 27% 53%;
+    transform: rotate(14deg);
+}
+.teeth {
+    width: 24vh;
+    height: 10vh;
+    left: 33vh;
+    top: 34vh;
+    position: absolute;
+    border: black 0.7vh solid;
+    border-radius: 0% 0% 50% 50% / 0% 0% 100% 100%;
+    background: ivory;
+    /* border-right: none; */
+    transform: rotate(315deg);
+    /* z-index: 0; */
+    clip-path: inset(42% 0 0 7%);
+    overflow: hidden;
+    /* z-index: 1;*/
+ }
+.smile {
+    width: 7.7vh;
+    height: 2vh;
+    left: 48vh;
+    top: 31vh;
+    position: absolute;
+    border: black 1.2vh solid;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 50% 50% 0% 0% / 100% 100% 0% 0%;
+    z-index: 1;
+}
+.muzzleTop {
+    width: 9.7vh;
+    height: 8vh;
+    left: 11vh;
+    top: 31vh;
+    position: absolute;
+    border: black 1.2vh solid;
+    border-radius: 119% 1% 0% 15% / 116% 21% 0% 0;
+    background: var(--furrColor);
+    border-right: none;
+    border-bottom: none;
+}
+.muzzleMiddle {
+    width: 32.7vh;
+    height: 20vh;
+    left: 19vh;
+    top: 23vh;
+    position: absolute;
+    background: var(--furrColor);
+    border-radius: 50%;
+}
+.leftLip {
+    width: 17vh;
+    height: 9vh;
+    left: 4vh;
+    top: 42vh;
+    position: absolute;
+    border: black 1.2vh solid;
+    border-radius: 46% 1% 58% 51% / 54% 0% 110% 48%;
+    background: var(--furrColor);
+    border-right: none;
+    /* z-index: 0; */
+}
+.teeth:before {
+    content: "";
+    width: 11vh;
+    height: 4vh;
+    left: 8vh;
+    top: 3vh;
+    position: absolute;
+    border: black 0.7vh solid;
+    border-radius: 0% 0% 28% 19% / 0% 0% 100% 100%;
+    border-right: none;
+    border-left: none;
+    transform: rotate(289deg);
+    /* clip-path: inset(50% 0 0 10%);*/
+}
+.rightLip {
+    width: 18vh;
+    height: 10vh;
+    left: 25vh;
+    top: 41vh;
+    position: absolute;
+    border: black 1.2vh solid;
+    border-radius: 0% 40% 46% 49% / 0% 46% 65% 57%;
+    background: var(--furrColor);
+    border-left: none;
+    border-top: none;
+    clip-path: inset(12% 0 0 8%);
+    /* z-index: 1; */
+}
+.dot {
+    width: 0vh;
+    height: 0.5vh;
+    left: 36.5vh;
+    top: 43.5vh;
+    position: absolute;
+    border: black solid 0.5vh;
+    border-radius: 50%;
+    transform: rotate(10deg)
+}
+.dot:before {
+    content: "";
+    width: 0vh;
+    height: 0.5vh;
+    left: -3vh;
+    top: 3.5vh;
+    position: absolute;
+    border: black solid 0.5vh;
+    border-radius: 50%;
+}
+.dot:after {
+    content: "";
+    width: 0vh;
+    height: 0.5vh;
+    left: 1vh;
+    top: 2.5vh;
+    position: absolute;
+    border: black solid 0.5vh;
+    border-radius: 50%;
+}
+.whisker {
+    content: "";
+    width: 4vh;
+    height: 5.5vh;
+    left: 37.5vh;
+    top: 49.5vh;
+    position: absolute;
+    border: black solid 0.6vh;
+    border-radius: 0% 9% 63% 0% / 0% 25% 98% 0%;
+    transform: rotate(299deg);
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+.whisker:before {
+    content: "";
+    width: 3vh;
+    height: 5.5vh;
+    left: -13vh;
+    top: -34vh;
+    position: absolute;
+    border: black solid 0.6vh;
+    border-radius: 14% 0% 0% 90% / 0% 60% 25% 99%;
+    transform: rotate(170deg);
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+}
+.whisker:after {
+    content: "";
+    width: 4vh;
+    height: 6.5vh;
+    left: -17vh;
+    top: -32vh;
+    position: absolute;
+    border: black solid 0.6vh;
+    border-radius: 25% 22% 43% 79% / 2% 43% 22% 100%;
+    transform: rotate(145deg);
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+
+}
+
+.noseTop {
+    width: 23.5vh;
+    height: 4vh;
+    left: 9.5vh;
+    top: 38vh;
+    background-color: saddlebrown;
+    position: absolute;
+    border: black 1.2vh solid;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    overflow: hidden;
+}
+.noseTop:before {
+    content: "";
+    width: 23.5vh;
+    height: 4vh;
+    left: -1.5vh;
+    top: -2vh;
+    background-color: saddlebrown;
+    position: absolute;
+    border: black 1.2vh solid;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    clip-path: inset(0% 59% 0% 0%);
+}
+.noseRight {
+    width: 15.5vh;
+    height: 2vh;
+    left: 19.5vh;
+    top: 44.5vh;
+    background-color: black;
+    position: absolute;
+    border: black 1.2vh solid;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    transform: rotate(319deg);
+    /* z-index: 1; */
+}
+.noseLeft {
+    width: 15.5vh;
+    height: 2vh;
+    left: 7.5vh;
+    top: 44.5vh;
+    background-color: black;
+    position: absolute;
+    border: black 1.2vh solid;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    transform: rotate(41deg);
+}
+.noseMiddle {
+    width: 13.5vh;
+    height: 11vh;
+    left: 15.5vh;
+    top: 40.5vh;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    /* z-index: 1; */
+
+}
+.rightEar {
+    width: 21vh;
+    height: 1.4vh;
+    top: 13vh;
+    left: 33vh;
+    position: absolute;
+    border: black solid 1vh;
+    border-radius: 0% 15% 0% 100% / 0% 71% 0% 100%;
+    transform: rotate(323deg);
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0 6%);
+}
+.rightEar1 {
+    width: 20vh;
+    height: 5.4vh;
+    top: 8vh;
+    left: 50vh;
+    position: absolute;
+    border: black solid 1vh;
+    border-radius: 50% 50% 49% 53% / 1% 0% 99% 100%;
+    transform: rotate(11deg);
+    background-color: black;
+    clip-path: inset(34% 0% 0 0);
+}
+
+.chin {
+    position: absolute;
+    width: 9vh;
+    height: 4vh;
+    top: 57vh;
+    left: 37vh;
+    border: black 1vh solid;
+    border-radius: 0% 0 70% 48% / 0% 0% 66% 96%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    transform: rotate(7deg);
+}
+.leftEar0 {
+    position: absolute;
+    width: 23vh;
+    height: 6vh;
+    top: -5.2vh;
+    left: 3vh;
+    border: black 3vh solid;
+    border-radius: 50% 50% 31% 63% / 0% -0% 24% 65%;
+    border-left: none;
+    border-right: none;
+    clip-path: polygon(0% 52%, 30% 25%, 100% 100%, 100% 100%, 0 100%);
+}
+.leftEar1 {
+    position: absolute;
+    width: 16vh;
+    height: 1.3vh;
+    top: 0.8vh;
+    left: 3.3vh;
+    background: saddlebrown;
+    border: black 1vh solid;
+    border-radius: 50%;
+    transform: rotate(12deg);
+}
+.leftEar2 {
+    position: absolute;
+    width: 27vh;
+    height: 12.3vh;
+    top: 3.8vh;
+    left: 5.3vh;
+    border: black 2vh solid;
+    border-radius: 66% 50% 50% 50% / 33% 58% 50% 50%;
+    border-right: none;
+    border-bottom: none;
+    transform: rotate(29deg);
+    clip-path: inset(0% 13% 56% 0%);
+}
+.rightEar {
+    position: absolute;
+    width: 21vh;
+    height: 6vh;
+    top: 4.8vh;
+    left: 47vh;
+    border: black 3vh solid;
+    border-radius: 0% 0% 35% 65% / 0% 0% 45% 100%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    transform: rotate(21deg);
+    clip-path: inset(59% -0% 0% 21%);
+}
+.rightEar1 {
+    position: absolute;
+    width: 8vh;
+    height: 6vh;
+    top: 3vh;
+    left: 59vh;
+    border: black 3vh solid;
+    border-radius: 10% 0% 61% 26% / 19% 0% 41% 33%;
+    transform: rotate(-10deg);
+    clip-path: inset(81% 17% -7% 21%);
+}
+.rightEar2 {
+    position: absolute;
+    width: 19vh;
+    height: 3vh;
+    top: 4.5vh;
+    left: 50vh;
+    border: black 3vh solid;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    transform: rotate(9deg);
+    clip-path: inset(54% 22% 0% 9%);
+}
+.rightEar3 {
+    position: absolute;
+    width: 19vh;
+    height: 3vh;
+    top: 13vh;
+    left: 33vh;
+    border: black 3vh solid;
+    border-radius: 0% 13% 0% 0% / 0% 35% 0% 0%;
+    transform: rotate(-38deg);
+    clip-path: polygon(55% -0%, 100% 0, 103% 40%, 55% 16%);
+}
+.rightEar4 {
+    position: absolute;
+    width: 3vh;
+    height: 0vh;
+    top: 11.1vh;
+    left: 66.5vh;
+    border: black 1vh solid;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+}
+.rightEar5 {
+    position: absolute;
+    width: 18vh;
+    height: 5.5vh;
+    top: 6.5vh;
+    left: 54.3vh;
+    background: saddlebrown;
+    border: black 0vh solid;
+    border-radius: 0% 0% 60% 40% / 0% 0 46% 61%;
+    transform: rotate(9deg);
+    clip-path: inset(75% 8% 0 10%);
+}
+.rightEar6 {
+    position: absolute;
+    width: 18vh;
+    height: 5.5vh;
+    top: 4.5vh;
+    left: 54.3vh;
+    background: var(--backgroundColor);
+    border: black 0.7vh solid;
+    border-radius: 0% 0% 50% 50% / 0% 0 18% 32%;
+    transform: rotate(6deg);
+    clip-path: inset(45% 16% 0 6%);
+}
+.noseReflection {
+    width: 22.5vh;
+    height: 4vh;
+    left: 14.5vh;
+    top: 39vh;
+    background-color: saddlebrown;
+    position: absolute;
+    border: black 1.2vh solid;
+    border-radius: 0% 0% 59% 37% / 0% 0% 100% 98%;
+    transform: rotate(349deg);
+    clip-path: polygon(1% 23%, 79% 52%, 84% 99%, 11% 85%);
+}
+.noseReflection1 {
+    width: 72.5vh;
+    height: 15vh;
+    left: -48.5vh;
+    top: 28.1vh;
+    position: absolute;
+    border: black 2.2vh solid;
+    border-radius: 0% 50% 41% 65% / 0% 32% 15% 100%;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-2deg);
+    clip-path: inset(0 0.3% 0 81%);
+}
+.tail {
+    position: absolute;
+    top: 73vh;
+    left: 58vh;
+    width: 6vh;
+    height: 7vh;
+    box-shadow: -14px 0px 0px 0px rgb(0 0 0);
+    background: radial-gradient(circle at -120% 73%, black 52%, var(--furrColor) 53%);
+    clip-path: polygon(87% -19%, 73% 30%, 113% 64%, 69% 148%, -46% 108%, -7% 28%, 37% 13%);
+}
+.tail:before {
+    content: "";
+    position: absolute;
+    background-color: var(--backgroundColor);
+    border: solid black 0.8vh;
+    border-radius: 0% 0% 50% 37% / 50% 50% 26% 28%;
+    top: -4vh;
+    left: -5vh;
+    width: 9vh;
+    height: 5vh;
+    transform: rotate(330deg);
+    clip-path: inset(83% 9% 0 0);
+}
+.tail:after {
+    content: "";
+    position: absolute;
+    background-color: var(--backgroundColor);
+    border: solid black 0.8vh;
+    border-radius: 42% 64% 0% 0% / 55% 59% 0% 0%;
+    top: 6vh;
+    left: -5vh;
+    width: 9vh;
+    height: 5vh;
+    transform: rotate(-2deg);
+    clip-path: inset(0% 12% 61% 0);
+}
+    .tail1 {
+        position: absolute;
+        top: 75.6vh;
+        left: 59.6vh;
+        width: 6vh;
+        height: 3vh;
+        border: solid black 0.8vh;
+        border-radius: 40% 60% 0% 0% / 63% 24% 0% 0%;
+        transform: rotate(44deg);
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        clip-path: polygon(8% -24%, 100% 14%, 114% 159%, 36% 62%);
+    }
+    .tail1:after {
+        content: "";
+        position: absolute;
+        top: 0vh;
+        left: 0vh;
+        width: 9vh;
+        height: 3vh;
+        border: solid black 0.8vh;
+        background: var(--backgroundColor);
+        border-radius: 40% 60% 0% 0% / 41% 32% 0% 0%;
+        transform: rotate(-50deg);
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+    }
+    .tail2 {
+        position: absolute;
+        top: 76vh;
+        left: 58vh;
+        width: 3vh;
+        height: 6vh;
+        border: solid black 0.8vh;
+        border-radius: 0% 30% 30% 0% / 0% 50% 50% 0%;
+        transform: rotate(6deg);
+        clip-path: polygon(26% 23%, 100% 14%, 100% 67%, 50% 45%);
+    }
+    .tail3 {
+        position: absolute;
+        top: 70vh;
+        left: 58.6vh;
+        width: 3vh;
+        height: 6vh;
+        border: solid black 0.8vh;
+        border-radius: 0% 30% 30% 0% / 0% 50% 50% 0%;
+        transform: rotate(19deg);
+        clip-path: polygon(22% 52%, 100% 8%, 100% 70%, 34% 58%);
+    }
