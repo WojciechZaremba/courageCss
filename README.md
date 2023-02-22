@@ -1,5 +1,5 @@
 ---
-permalink: /index.html
+https://wojciechzaremba.github.io/courageCss/
 ---
 # Courage in CSS
 #### *What is it?*
